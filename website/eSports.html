@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Lab exercise html5</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Adam R Wakenshaw" />
+    <meta name="description" content="HTML5 assesment website" />
+    <link href="Styles\styleMain.css" rel="stylesheet" type="text/css" />
+
+
+</head>
+
+<body>
+
+
+
+
+    <div class="grid-container">
+
+
+        <section class="Header">
+
+            <h1>eSports</h1>
+            <img class="hImage" src="Images/GGI%20logo.png">
+
+        </section>
+
+
+
+
+
+
+        <nav class="Nav">
+            <ul class="ul-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a class="active" href="eSports.html">eSports</a></li>
+                <li><a href="CoD.html">CoD eSports</a></li>
+                <li><a href="OpTic.html">OpTic</a></li>
+                <li><a href="issues.html">Conflicts</a></li>
+            </ul>
+
+        </nav>
+
+
+
+
+
+
+
+        <section class="Sidebar">
+
+            <nav>
+                <ul class="wrapper">
+                    <li><a href="index.html">Home</a></li>
+
+
+
+                    <li><a class="active" onmouseover="dropDown1()" href="eSports.html">eSports</a></li>
+                    <script src="JavaScript/nav.js"></script>
+                    <ul class="wrapper">
+                        <li><a class="hideTabs" id="hover" href="eSports.html#esportsOrignins">eSport Origins</a> </li>
+                        <li><a class="hideTabs" id="hover1" href="eSports.html#esportsTBE">The Biggest eSport</a></li>
+                    </ul>
+
+
+
+
+                    <li><a onmouseover="dropDown2()" href="CoD.html">CoD eSports</a></li>
+
+                    <ul class="wrapper">
+                        <li><a class="hideTabs" id="hover2" href="CoD.html#codIntro">Call of Duty Information </a></li>
+                        <li><a class="hideTabs" id="hover3" href="CoD.html#codHistory">Call of Duty History </a></li>
+                        <li><a class="hideTabs" id="hover4" href="CoD.html#codPresent">Call of Duty Present </a></li>
+                    </ul>
+
+
+
+
+                    <li><a onmouseover="dropDown3()"  href="OpTic.html">OpTic</a></li>
+
+                    <ul class="wrapper">
+                        <li><a onmouseover="dropDown31()" class="hideTabs" id="hover5" href="OpTic.html#opticTitle">The Rise, Fall , Rebirth</a></li>
+                        <ul class="wrapper">
+                            <li><a class="hideTabs" id="hover3.1.1" href="OpTic.html#opticRise">The Rise</a></li>
+                            <li><a class="hideTabs" id="hover3.1.2" href="OpTic.html#opticFall">The Fall</a></li>
+                            <li><a class="hideTabs" id="hover3.1.3" href="OpTic.html#opticRebirth">The Rebirth</a></li>
+                        </ul>
+                    </ul>
+
+
+
+
+                    <li><a onmouseover="dropDown4()" href="issues.html">Conflicts</a></li>
+                    <ul class="wrapper">
+                        <li><a onmouseover="dropDown41()" class="hideTabs" id="hover6" href="issues.html#conflictsIssues"> Issues with eSports</a></li>
+                        <ul class="wrapper">
+                            <li><a class="hideTabs" id="hover4.1.1" href="issues.html#conflictsDA">Drug Use</a></li>
+                            <li><a class="hideTabs" id="hover4.1.2" href="issues.html#conflictsM">Maturity</a></li>
+                        </ul>
+
+
+                        <li><a class="hideTabs" id="hover7" href="issues.html#conflictsFeedback">Feedback</a></li>
+                    </ul>
+
+
+                </ul>
+
+
+
+
+            </nav>
+
+        </section>
+
+
+        <section class="Main">
+
+            <h2 id="esportsOrignins">eSports Orignis</h2>
+
+            <p>eSports is a global phenomanon that has sky rocketed in popularity in the past decade. Originating from early arcade game competitiions eSports has evolved into filling huge stadiums with millions of dollars being poured in by investors. Ranging from arcade games to FPS titles delving into battle royals and MOBAs </p>
+
+
+            <h2 id="esportsTBE">The Biggest eSport</h2>
+
+            <p>The biggest eSport in the world is the League of Ledgends franchise. To enter this league eSport organisations had to in vest $10 million into the league for a spot there 3 main leagues across 3 different regions being EU, NA and Asia each of these consisting of 10 teams. In the 2020 League of Ledgends world final amassed 139million of hours watch with 3.9 million concureent peak viewrs. A stadium was chosen for the finals selling out a 33,000 stadium capacity in shanghi china.</p>
+
+
+            <img class="eSportsImage" src="Images/LOL.jpg">
+
+            <h2>Are you already an eSports fan?</h2>
+            <label for="questionOne">How many Teams are there in the CDL?</label>
+            <input id="questionOne" type="text" placeholder="">
+
+            <label for="questionTwo">How many million did teams have to invest for a spot on the Legaue of Ledgends franchise?</label>
+            <input id="questionTwo" type="text" placeholder="">
+
+            <label for="questionThree">How many million hours watched was there in total for the 2020 League of Ledgends world final?</label>
+            <input id="questionThree" type="text" placeholder="">
+
+
+            <button type="button" onclick="scoreAdd()">Display Score</button>
+            <button type="button" onclick="reset()">Reset Score</button>
+
+
+            <script src="JavaScript/eSportQuiz.js"> </script>
+
+            <p id="Score"></p>
+
+
+
+        </section>
+
+
+
+
+
+
+
+
+        <footer class="Footer">
+            <p>&copy; Rights reserved to Good Game Industries 2020 incorperated</p>
+
+        </footer>
+
+    </div>
+</body>
+
+</html>

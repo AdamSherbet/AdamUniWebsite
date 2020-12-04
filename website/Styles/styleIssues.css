@@ -1,0 +1,235 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 0.5fr;
+    grid-template-rows: 0.4fr 0.3fr 1.3fr 1.3fr 0.4fr;
+    gap: 0px 0px;
+    grid-template-areas:
+        "Header Header Header"
+        "Nav Nav Nav"
+        "Sidebar Main Aside"
+        "Sidebar mainTwo Aside"
+        "Footer Footer Footer";
+}
+
+.Header {
+    grid-area: Header;
+    background-color: #000000;
+    color: #9dc83c;
+    font-size: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+}
+
+.Nav {
+    grid-area: Nav;
+    background-color: #000000;
+    color: #9dc83c;
+    font-size: 30px;
+
+}
+
+
+
+.Sidebar {
+    grid-area: Sidebar;
+    background-color: #646464;
+    color: #9dc83c;
+    border: 0.5vw solid #000000;
+
+}
+
+.Main {
+    grid-area: Main;
+    background-color: #646464;
+    color: #9dc83c;
+    border: 0.5vw solid #000000;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+
+
+
+}
+
+.mainTwo {
+    grid-area: mainTwo;
+    background-color: #646464;
+    color: #9dc83c;
+    border: 0.5vw solid #000000;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+
+
+
+}
+
+
+
+
+.Aside {
+    grid-area: Aside;
+    background-color: #646464;
+    color: #9dc83c;
+    border: 0.5vw solid #000000;
+
+}
+
+
+.Footer {
+    grid-area: Footer;
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+}
+
+
+body {
+
+    font-family: "Arial Black", sans-serif;
+}
+
+
+.hImage {
+
+    width: 200px;
+
+}
+
+.mapFrame {
+    width: 1000px
+}
+
+
+
+
+
+
+
+.feedback-container {
+    display: grid;
+    grid-template-columns: 2fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+        "fTitle"
+        "fInfo"
+        "fDT"
+        "fM"
+        "fDWH"
+        "fComments"
+        "fSubmit";
+}
+
+
+.fDT {
+    grid-area: fDT;
+
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.fM {
+    grid-area: fM;
+
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.fDWH {
+    grid-area: fDWH;
+
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.fComments {
+    grid-area: fComments;
+
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+
+}
+
+.fSubmit {
+    grid-area: fSubmit;
+
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+
+
+
+
+.wrapper {
+    
+    list-style: none;
+    
+}
+
+.hideTabs{
+    
+    display: none;
+}
+
+
+
+
+.ul-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1vh 1vw;
+    list-style-type: none;
+    background-color: #000000;
+    color: #9dc83c;
+
+}
+
+li a {
+    text-decoration: none;
+    color: #9dc83c;
+}
+
+
+li a:hover:not(.active) {
+    background-color: #9dc83c;
+    color: #ffffff;
+}
+
+
+
+
+.active {
+    color: white;
+}

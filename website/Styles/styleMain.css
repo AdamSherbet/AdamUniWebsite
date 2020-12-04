@@ -1,0 +1,272 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 0.5fr;
+    grid-template-rows: 0.4fr 0.3fr 2.9fr 0.4fr;
+    gap: 0px 0px;
+    grid-template-areas:
+        "Header Header Header"
+        "Nav Nav Nav"
+        "Sidebar Main Main"
+        "Footer Footer Footer";
+}
+
+.Header {
+    grid-area: Header;
+    background-color: #000000;
+    color: #9dc83c;
+    font-size: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+}
+
+.Nav {
+    grid-area: Nav;
+    background-color: #000000;
+    color: #9dc83c;
+    font-size: 30px;
+
+}
+
+
+
+.Sidebar {
+    grid-area: Sidebar;
+    background-color: #646464;
+    color: #9dc83c;
+    border: 0.5vw solid #000000;
+
+}
+
+.Main {
+    grid-area: Main;
+    background-color: #646464;
+    color: #9dc83c;
+    border: 0.5vw solid #000000;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+
+
+
+
+
+}
+
+.Aside {
+    grid-area: Aside;
+    background-color: #646464;
+    color: #9dc83c;
+    border: 0.5vw solid #000000;
+
+
+}
+
+
+.Footer {
+    grid-area: Footer;
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+}
+
+
+body {
+
+    font-family: "Arial Black", sans-serif;
+}
+
+
+.hImage {
+
+    width: 200px;
+
+}
+
+
+
+.codImage {
+    width: 500px;
+}
+
+
+
+
+
+.eSportsImage {
+    width: 500px;
+}
+
+
+.buttonClass{
+    
+     display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+
+@media all and (max-width: 1060px) {
+
+
+
+    .hImage {
+
+        width: 500px;
+        visibility: hidden;
+        display: none;
+
+    }
+
+
+
+
+}
+
+
+@media all and (max-width:858px) {
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 0.5fr 2fr 0.5fr;
+        grid-template-rows: 0.4fr 0.3fr 2.9fr 0.4fr;
+        gap: 0px 0px;
+        grid-template-areas:
+            "Header Header Header"
+            "Nav Nav Nav"
+            "Sidebar Main Main"
+            "Footer Footer Footer";
+    }
+
+    .Header {
+        grid-area: Header;
+        background-color: #000000;
+        color: #9dc83c;
+        font-size: 25px;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+
+    }
+
+    .Nav {
+        grid-area: Nav;
+        background-color: #000000;
+        color: #9dc83c;
+        font-size: 15px;
+
+    }
+
+
+
+    .Sidebar {
+        grid-area: Sidebar;
+        background-color: #646464;
+        color: #9dc83c;
+        border: 0.5vw solid #000000;
+        font-size:13px;
+
+    }
+
+    .Main {
+        grid-area: Main;
+        background-color: #646464;
+        color: #9dc83c;
+        border: 0.5vw solid #000000;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        font-size: 13px;
+
+
+
+
+
+    }
+
+    .Aside {
+        grid-area: Aside;
+        background-color: #646464;
+        color: #9dc83c;
+        border: 0.5vw solid #000000;
+
+    }
+
+
+    .Footer {
+        grid-area: Footer;
+        background-color: #000000;
+        color: #ffffff;
+        text-align: center;
+    }
+
+
+    body {
+
+        font-family: "Arial Black", sans-serif;
+    }
+
+    .codImage {
+        width: 300px;
+    }
+
+    .eSportsImage {
+        width: 300px;
+    }
+
+}
+
+
+.wrapper {
+    
+    list-style: none;
+    
+}
+
+.hideTabs{
+    
+    display: none;
+}
+
+
+.ul-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1vh 1vw;
+    list-style-type: none;
+    background-color: #000000;
+    color: #9dc83c;
+
+}
+
+li a {
+    text-decoration: none;
+    color: #9dc83c;
+}
+
+
+li a:hover:not(.active) {
+    background-color: #9dc83c;
+    color: #ffffff;
+}
+
+
+
+
+.active {
+    color: white;
+}
